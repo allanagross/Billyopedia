@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.2/chai.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.4.0/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/4.0.0/sinon.min.js"></script>
+    <script src="../src/lib/spin.min.js"></script>
+    <script src="../src/lib/pacifier.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script>
+      const expect = chai.expect;
+      mocha.setup('');
+    </script>
+    <script src="../src/index.js"></script>
+    <script src="init.js"></script>
+    <script src="index.test.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
